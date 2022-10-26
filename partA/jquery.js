@@ -1,4 +1,4 @@
-function Validate()
+/*function Validate()
 {
    // alert("Please fill in the details.");
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
     }
 }*/
 
-$(function(){
+/*$(function(){
 
     //var regExp = /^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$/;
     var regExp = /^([\w\.\+]{1,})([^\W])(@)([\northeastern]{1,})(\.[\w]{1,})+$/;
@@ -58,7 +58,7 @@ $(function(){
       regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
     });
     
-});
+});*/
 
 
 
