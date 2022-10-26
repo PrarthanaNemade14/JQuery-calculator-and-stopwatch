@@ -6,6 +6,7 @@ function Validate()
     var pass = $("#password").val();
     var em = $("#email").val();
    
+    
     // Validation for Username
     if(un == "") {
         $(".nameErr").html("Enter Username");
@@ -19,7 +20,7 @@ function Validate()
     // Validation for Password
     if(pass == "") {
         $(".passwordErr").html("Enter Password");
-    } else if(pass.length <= 8){
+    } else if(pass.length < 8){
         $(".passwordErr").html("Please note: The password must contain 8 or more letters.");
     }
     else if(pass){
@@ -44,6 +45,7 @@ function Validate()
 
 
 // Calculator function
+
 function Operation(operand) { 
 				
     var firstValue = parseInt(document.getElementById('number1').value);

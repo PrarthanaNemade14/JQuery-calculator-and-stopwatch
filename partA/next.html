@@ -21,6 +21,9 @@
 </head>
 <body>
     <body>
+
+
+
         <center>
         <fieldset style="width:280px">
           <legend>Calculator:</legend><br>
@@ -52,7 +55,7 @@
                 Numbers allowed only.
            </div>
                 <br><br>
-                <input type="button" class="btn btn-outline-success id="btnADD" value="Addition" onclick="validateNumber()" onclick="Operation('+')"  />
+                <input type="button" class="btn btn-outline-success id="btnADD" value="Addition" onclick="Operation('+')"  />
                 <input type="button" class="btn btn-outline-success id="btnSUB" value="Subtraction" onclick="Operation('-')" /><br><br>
                 <input type="button" class="btn btn-outline-success id="btnMUL" value="Multiplication" onclick="Operation('*')" />
                 <input type="button" class="btn btn-outline-success id="btnDIV" value="Division" onclick="Operation('/')" /><br><br>  
@@ -74,6 +77,9 @@ $('#num2validatecheck').hide();
 $('#num3check').hide();
 $('#num3validatecheck').hide();
 
+var num1valid = false;
+var num2valid = false;
+var num3valid = false;
 
 
 };
