@@ -28,7 +28,7 @@ function Validate()
 
     // Validation for Email
 
-    $(function(){
+   /* $(function(){
 
         // var regExp = /^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$/;
         var regExp = /^([\w\.\+]{1,})([^\W])(@)([\northeastern]{1,})(\.[\w]{1,})+$/;
@@ -38,18 +38,18 @@ function Validate()
           regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
         });
         
-    });
-}
+    });*/
 
-    /*if(em == "") {
+
+    if(em == "") {
         $(".emailErr").html("Enter Email");
-    } else if(em = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.(edu)$/){
+    } else if(em == /^([\w\.\+]{1,})([^\W])(@)([\northeastern]{1,})(\.[\w]{1,})+$/){
         $(".emailErr").html("Please note: Enter xyz@northeastern.edu email only.");
     }
     else if(pass){
         $(".emailErr").html("");
     }
-}*/
+}
 
 // Calculator function
 function Operation(operand){

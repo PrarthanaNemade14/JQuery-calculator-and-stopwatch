@@ -1,9 +1,10 @@
-/*function Validate()
+function Validate()
 {
    // alert("Please fill in the details.");
 
     var un = $("#name").val();
     var pass = $("#password").val();
+    var em = $("#email").val();
    
     // Validation for Username
     if(un == "") {
@@ -13,17 +14,6 @@
     }
     else if(un){
         $(".nameErr").html("");
-    }
-}
-
-//new password
-$(document).ready(function() {
-    function updatePasswordsMatchLabel() {
-        if ($('#password').val() == $('#confirm-password').val()) {
-            $('#password-match-label').text('Superb! Your passwords match');
-        } else {
-            $('#password-match-label').text('Your passwords do not match');
-        }
     }
 
     // Validation for Password
@@ -35,32 +25,17 @@ $(document).ready(function() {
     else if(pass){
         $(".passwordErr").html("");
     }
-}
 
-/*    // Validation for Email
+    // Validation for email
     if(em == "") {
         $(".emailErr").html("Enter Email");
-    } else if(em = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.(edu)$/){
+    } else if(em == /^([\w\.\+]{1,})([^\W])(@)([\northeastern]{1,})(\.[\w]{1,})+$/){
         $(".emailErr").html("Please note: Enter xyz@northeastern.edu email only.");
     }
     else if(pass){
         $(".emailErr").html("");
     }
-}*/
-
-/*$(function(){
-
-    //var regExp = /^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$/;
-    var regExp = /^([\w\.\+]{1,})([^\W])(@)([\northeastern]{1,})(\.[\w]{1,})+$/;
-    
-    $('[type="email"]').on('keyup', function() {
-      $('.message').hide();
-      regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
-    });
-    
-});*/
-
-
+}
 
 
 
@@ -101,6 +76,8 @@ function Operation(operand) {
         });
     });
 }
+
+
 
 
 
