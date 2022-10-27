@@ -46,6 +46,8 @@ function Validate()
 
 // Calculator function
 
+
+
 function Operation(operand) { 
 				
     var firstValue = parseInt(document.getElementById('number1').value);
