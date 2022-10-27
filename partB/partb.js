@@ -65,6 +65,7 @@ minutesCount = 0,secondCount = 0,centiSecondCount = 0
 minutes = document.getElementById('minutes')
 second = document.getElementById('second')
 centiSecond = document.getElementById('centiSecond')
+console.log(hi);
 function startSW(){
 	$("#pauseCount").removeAttr("disabled")
 	$("#resetCount").removeAttr("disabled")

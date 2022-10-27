@@ -22,14 +22,13 @@
 <body>
     <body>
 
-
-
+        
         <center>
         <fieldset style="width:280px">
-          <legend>Calculator:</legend><br>
+            <h1 style="background-color:rgb(169, 103, 212);">CALCULATOR</h1><br>
          
             <label for="Number">Number1<span style="color:red">*</span></label>
-            <input type="text" name="quantity" id="number1" required />&nbsp;<span id="errmsg"></span>
+            <input type="text" name="quantity" id="number1" style="background-color:rgb(209, 126, 173)" required />&nbsp;<span id="errmsg"></span>
             <div id = "num1check" style="color:red; padding-left:25%">
                  Please enter a value.
             </div>
@@ -38,7 +37,7 @@
             </div>
          
             <label for="Number">Number2<span style="color:red">*</span></label>
-            <input type="text" name="quantity" id="number2" required />&nbsp;<span id="errmsg"></span>
+            <input type="text" name="quantity" id="number2" style="background-color:rgb(209, 126, 173)"  required />&nbsp;<span id="errmsg"></span>
             <div id = "num2check" style="color:red; padding-left:25%">
                 Please enter a value.
            </div>
@@ -47,7 +46,7 @@
            </div>
 
             <label for="Number">Number3<span style="color:red">*</span></label>
-            <input type="text" name="quantity" id="number3" required/>&nbsp;<span id="errmsg"></span>
+            <input type="text" name="quantity" id="number3" style="background-color:rgb(209, 126, 173)"  required/>&nbsp;<span id="errmsg"></span>
             <div id = "num3check" style="color:red; padding-left:25%">
                 Please enter a value.
            </div>
@@ -55,13 +54,13 @@
                 Numbers allowed only.
            </div>
                 <br><br>
-                <input type="button" class="btn btn-outline-success id="btnADD" value="Addition" onclick="Operation('+')"  />
-                <input type="button" class="btn btn-outline-success id="btnSUB" value="Subtraction" onclick="Operation('-')" /><br><br>
-                <input type="button" class="btn btn-outline-success id="btnMUL" value="Multiplication" onclick="Operation('*')" />
-                <input type="button" class="btn btn-outline-success id="btnDIV" value="Division" onclick="Operation('/')" /><br><br>  
+                <input type="button" class="btn btn-outline-danger id="btnADD" value="Addition" onclick="Operation('+')"  />
+                <input type="button" class="btn btn-outline-danger id="btnSUB" value="Subtraction" onclick="Operation('-')" /><br><br>
+                <input type="button" class="btn btn-outline-danger id="btnMUL" value="Multiplication" onclick="Operation('*')" />
+                <input type="button" class="btn btn-outline-danger id="btnDIV" value="Division" onclick="Operation('/')" /><br><br>  
                 
                 <label for="displayValue">The result is: </label><br>
-                <input type="textbox"  name="display" readonly/>
+                <input type="textbox"  name="display" style="background-color:rgb(209, 126, 173)"  readonly/>
 
 
 
