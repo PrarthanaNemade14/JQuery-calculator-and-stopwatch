@@ -1,18 +1,103 @@
+
+ 
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop Watch</title>
-    <link rel="stylesheet" href="partb.css">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="partb.css">
 </head>
+
 <body>
+<div style="height: 100px"></div>
+<div class="container">
+	<div class="countdown">
+		<span id="minutes">0</span>:<span id="second">0</span>:<span id="centiSecond">0</span>
+	</div>
+	<div class="text-center">
+		<button id="startCount" onclick="startSW()">Start</button>
+		<button id="pauseCount" onclick="pauseSW()" >Pause</button>
+		<button id="resetCount" onclick="restartSW()" >Restart</button>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="partb.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--
+    <body>
     <center>
         <p style="background-color: rgb(169, 142, 237);">
         <h1>STOP WATCH</h1>
         </p>
-    </center>
+    
 
     <div style = "height: 100px"></div>
 
@@ -21,10 +106,11 @@
     </div>
     <br>
     <div>
-        <button id="startCount" onclick="strt()"> START </button>
-        <button id="stopCount" onclick="stp()"> STOP </button>
-        <button id="resetCount" onclick="rst()"> RESET </button>
+        <button id="startCount" onclick="strt()" disabled> START </button>
+        <button id="stopCount" onclick="stp()" disabled> STOP </button>
+        <button id="resetCount" onclick="rst()" disabled> RESET </button>
     </div>
+    </center>
 
 </body>
-</html>
+</html>    -->
