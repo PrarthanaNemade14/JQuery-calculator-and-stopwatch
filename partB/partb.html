@@ -1,97 +1,72 @@
-
- 
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-<title>Home</title>
-<link rel="stylesheet" type="text/css" href="partb.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="partb.css" />
+    <title>Stop Watch</title>
+  </head>
 
-</head>
+  <body>
+	<center>
+	<h1 style="background-color:rgb(38, 178, 87);">STOP-WATCH</h1><br>
 
-<body>
-<div style="height: 100px"></div>
-<div class="container">
-	<div class="countdown">
-		<span id="minutes">0</span>:<span id="second">0</span>:<span id="centiSecond">0</span>
-	</div>
-	<div class="text-center">
-		<button id="startCount" onclick="startSW()">Start</button>
-		<button id="pauseCount" onclick="pauseSW()" >Pause</button>
-		<button id="resetCount" onclick="restartSW()" >Restart</button>
-	</div>
-</div>
+    <div class="container">
+      <!-- <h1>Stopwatch</h1> -->
+
+      <div class="time">00:00:00</div>
+
+      <button id="start">Start</button><br><br>
+      <button id="stop">Stop</button><br><br>
+      <button id="reset">Reset</button><br><br>
+    </div>
+	</center>
 
 
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="/js/partb.js"></script>
-</body>
+
+    <script type="text/javascript">
+      const time_el = document.querySelector(".time");
+      const start_btn = document.getElementById("start");
+      const stop_btn = document.getElementById("stop");
+      const reset_btn = document.getElementById("reset");
+
+      let seconds = 0;
+      let interval = null;
+
+      start_btn.addEventListener("click", start);
+      stop_btn.addEventListener("click", stop);
+      reset_btn.addEventListener("click", reset);
+
+      function timer() {
+        seconds++;
+
+        let hrs = Math.floor(seconds / 3600);
+        let mins = Math.floor((seconds - hrs * 3600) / 60);
+        let secs = seconds % 60;
+
+        if (secs < 10) sec = "0" + secs;
+        if (mins < 10) mins = "0" + mins;
+        if (hrs < 10) hrs = "0" + hrs;
+        time_el.innerText = `${hrs}:${mins}:${secs}`;
+      }
+
+      function start() {
+        if (interval) {
+          return;
+        }
+        interval = setInterval(timer, 1000);   //setinterval func
+      }
+
+      function stop() {
+        clearInterval(interval);              //clearinternal func
+        interval = null;
+      }
+      function reset() {
+        stop();
+        seconds = 0;
+        time_el.innerText = "00:00:00";
+      }
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-    
